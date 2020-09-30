@@ -1,0 +1,9 @@
+  @mixin flexdiscografia($display, $flex, $direction, $color, $align, $margin, $overflow) {
+    display: $display;
+    flex: $flex;
+    flex-direction: $direction;
+    color: $color;
+    align-items: $align;
+    margin: $margin;
+    overflow: $overflow;
+}

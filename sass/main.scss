@@ -1,0 +1,82 @@
+@import "mixin";
+@import '_variables.scss';
+
+.textoflexizquierda{
+    width: 33%;
+    padding-right: 25px;
+    vertical-align: middle;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: left;
+    line-height: 30px;
+    overflow:hidden;
+
+    p {
+        color: $colorprincipal;
+        font-size: $tamanionormal;
+        font-family: $fuenteprincipal;
+        padding: 0, 0;
+        margin: 0;
+    }
+}
+
+.textoflexcentro{
+    @extend .textoflexizquierda;
+}
+
+.textoflexderecha{
+    @extend .textoflexizquierda;
+}
+
+.contenedorflex3{
+    @include flexdiscografia(flex, auto, row, white, center, auto, hidden);
+}
+
+.textoflexizquierda2{
+    width: 100%;
+    height: 525px;
+    color: white;
+    display: inline-flex;
+    padding-right: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    vertical-align: middle;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: left;
+    line-height: 30px;
+}
+
+.textoflexcentro2{
+    width: 100%;
+    height: 525px;
+    color: white;
+    display: inline-flex;
+    padding-right: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    vertical-align: middle;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: left;
+    line-height: 30px;
+}
+
+.textoflexderecha2{
+    width: 100%;
+    height: 525px;
+    color: white;
+    display: inline-flex;
+    padding-right: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    vertical-align: middle;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: left;
+    line-height: 30px;
+}

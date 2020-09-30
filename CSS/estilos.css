@@ -3,7 +3,6 @@ header {
     overflow:hidden;
 	background: #202020;
     top: 0;
-
     border-bottom: 5px solid white;
 }
  
@@ -29,10 +28,89 @@ header .logo {
     float:left;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
- 
+
 header nav {
 	float:right;
     line-height:80px;
+}
+
+@media screen and (max-width: 1840px) {
+    .wrapper {
+        width:80%
+    }
+    }
+
+@media screen and (max-width: 1385px) {
+        .wrapper {
+            width:100%
+        }
+}
+
+@media screen and (max-width: 1125px) {
+    .wrapper {
+        width:25%
+    }
+    header nav {
+        float:right;
+        line-height:30px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .wrapper {
+        width:27%
+    }
+    header nav {
+        float:right;
+        line-height:30px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .wrapper {
+        width:30%
+    }
+    header nav {
+        float:right;
+        line-height:30px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .wrapper {
+        width:35%
+    }
+    header nav {
+        float:right;
+        line-height:30px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .wrapper {
+        width:42%
+    }
+    header nav {
+        float:right;
+        line-height:30px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .wrapper {
+        width:60%
+    }
+    header nav {
+        float:right;
+        line-height:30px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    header nav {
+        float:right;
+        line-height:30px;
+    }
 }
  
 header nav a {
@@ -56,9 +134,8 @@ header nav a:hover {
 }
 
 section{
-    width:100%;
-    overflow:hidden;
-    background-color: red;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -67,6 +144,7 @@ a {
     text-decoration: none;
     font-size: 20px;
     text-shadow: black;
+    text-shadow: black 0.1em 0.1em 0.2em;
 }
 
 li {
@@ -89,6 +167,17 @@ h2{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     display: inline;
     text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.mediobienvenida{
+	width:100%;
+	margin:auto;
+    overflow:hidden;
+    height: 70%;
+    background-color: black;
+    background-image: url('../imagenes/queenfondo11.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .contenedortextobienvenida{
@@ -115,22 +204,22 @@ h2{
 }
 
 .flexarriba1{
-    width: 280px;
+    width: 30%;
     color: white;
     display: inline-flex;
-    padding-right: 25px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: white;
     vertical-align: middle;
-    padding-left: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
+    padding-right: 10%;
     text-align: left;
     line-height: 30px;
+    overflow:hidden;
 }
 
 .flexarriba2{
-    width: 1200px;
+    width: 70%;
     color: white;
     display: inline-flex;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -140,14 +229,25 @@ h2{
     padding-bottom: 10px;
     text-align: left;
     line-height: 30px;
+    overflow:hidden;
 }
+
+@media screen and (max-width: 785px) {
+    .flexarriba1{
+       display: none;
+      }
+      .flexarriba2{
+        width: 100%;
+        text-align: center;
+      }
+    }
 
 .contenedordescripcion{
     width: 100%;
     background: rgba(44, 44, 44, 0.3);
     vertical-align: middle;
     text-align: center;
-    margin-top: 450px;
+    margin-top: 20%;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 14px;
 }
@@ -159,172 +259,6 @@ h2{
     text-shadow: black 0.1em 0.1em 0.2em;
 }
 
-.mediogaleria{
-	width:60%; 
-	margin:auto;
-    overflow:hidden;
-    min-height: 420px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: black;
-}
-
-.mediohistoria{
-	width:100%; 
-	margin:auto;
-    overflow:hidden;
-    border-top: 5px solid white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: black;
-    text-shadow: black 0.1em 0.1em 0.2em;
-    height: 628px;
-    background-image: url('../imagenes/queenfondo2.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: black;
-}
-
-.mediodiscografia{
-	width:100%; 
-	margin:auto;
-    overflow:hidden;
-    border-top: 5px solid white;
-    border-bottom: 5px solid white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: black;
-    height: 628px;
-    background-image: url('../imagenes/queenfondo4.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: black;
-}
-
-.mediocontacto{
-	width:100%; 
-    overflow:hidden;
-    border-top: 5px solid white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: black;
-    height: 700px;
-    background-image: url('../imagenes/queenfondo3.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: black;
-}
-
-.mediohistoriacontenido{
-	width:60%; 
-	margin:auto;
-    overflow:hidden;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: transparent;
-}
-
-.mediodiscografiacontenido{
-	width:60%; 
-	margin:auto;
-    overflow:hidden;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: transparent;
-}
-
-.mediobienvenida{
-	width:100%;
-	margin:auto;
-    overflow:hidden;
-    height: 700px;
-    background-color: black;
-    background-image: url('../imagenes/queenfondo11.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.contenedortexto2
-{
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-width: 100%;
-height: 200px;
-background: rgba(44, 44, 44, 0.1);
-color: white;
-font-size: 16px;
-color: white;
-vertical-align: middle;
-text-align: center;
-}
-
-.contenido .p{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-footer{
-    border-top: 5px solid white;
-    width:100%;
-	overflow:hidden;
-    background: #202020;
-}
-
-.contenidofooter{
-    width:60%; 
-	margin:auto;
-    overflow:hidden;
-    line-height:100px;
-    font-size: 17px;
-    color: white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-.contenedorflex2{
-    display: flex;
-    flex: auto;
-    flex-direction: row;
-    color: white;
-    align-items: center;
-    margin:auto;
-    overflow:hidden;
-}
-
-.tituloamarillo  {
-    color: #EEBA41;
-    text-align: center;
-    margin-top: 64px;
-    text-shadow: black 0.1em 0.1em 0.2em;
-}
-
-.tituloamarillo2  {
-    color: #EEBA41;
-    text-align: center;
-    margin-top: 44px;
-    margin-bottom: 20px;
-}
-
-.cuadrodetitulo{
-    width: 100%;
-    border:  1px solid #111111;
-    background-color: #202020;
-    height: 40px;
-    padding-left: 20px;
-    margin-bottom: 20px;
-    line-height: 42px;
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: 3fr 3fr;
-    grid-template-rows: 3fr 3fr;
-    grid-auto-flow: column;
-}
-
-.a {
-     color: white;
-     width: 300px;
-}
-
- .animate__animated.animate__bounce {
-    --animate-duration: 2.5s;
-    animation-iteration-count: infinite;
-    padding-left: 57px;
-    text-align: center;
-}
-
 .mediologros{
 	width:100%; 
 	margin:auto;
@@ -334,8 +268,8 @@ footer{
     background-repeat: no-repeat;
     background-size: cover;
     background-color: black;
-    height: 350px;
-    margin-top: 23px;
+    height: 65%;
+    padding-bottom: 10px;
     text-align: center;
     border-top: 5px solid white;
 }
@@ -360,4 +294,334 @@ footer{
     text-align: center;
     margin-top: 39px;
     text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+footer{
+    border-top: 5px solid white;
+    width:100%;
+    height: 70px;
+	overflow:hidden;
+    background: #202020;
+}
+
+.contenidofooter{
+    width:60%;
+    margin:auto;
+    padding-top: 20px;
+    overflow:hidden;
+    font-size: 17px;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+@media screen and (max-width: 710px) {
+    footer{
+     display: none;
+    }
+}
+
+
+
+
+.mediohistoria{
+	width:100%; 
+	margin:auto;
+    overflow:hidden;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: black;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    height: 70%;
+    background-image: url('../imagenes/queenfondo2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+}
+
+.mediohistoriacontenido{
+	width:60%; 
+	margin:auto;
+    overflow:hidden;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: transparent;
+}
+
+.contenedorflex2{
+    display: flex;
+    flex: auto;
+    flex-direction: row;
+    color: white;
+    align-items: center;
+    margin:auto;
+    overflow:hidden;
+}
+
+.contenedorhistoriamobil{
+    display: none;
+}
+
+@media screen and (max-width: 1350px) {
+    .contenedorhistoriamobil{
+        display: inline;
+        text-align: center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: white;
+        padding-bottom: 35px;
+    }    
+    .contenedorflex2{
+        display: none;
+    }
+    .textoflexizquierda{
+        display: none;
+    }
+    .textoflexderecha{
+        display: none;
+    }
+    .textoflexcentro{
+        display: none;
+    }
+}
+
+.mediogaleria{
+	width:50%; 
+	margin:auto;
+    overflow:hidden;
+    min-height: 420px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: black;
+    margin-bottom: 20px;
+}
+
+.mediodiscografia{
+	width:100%; 
+	margin:auto;
+    overflow:hidden;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: black;
+    height: 65%;
+    background-image: url('../imagenes/queenfondo4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+}
+
+.mediodiscografiacontenido{
+	width:60%; 
+	margin:auto;
+    overflow:hidden;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: transparent;
+}
+
+.contenedordiscografiamobil{
+    display: none;
+}
+
+@media screen and (max-width: 1800px) {
+    .contenedordiscografiamobil{
+        display: inherit;
+        width: 100%;
+        padding-bottom: 35px;
+        margin:auto;
+        overflow:hidden;
+    }    
+    .contenedorflex3{
+        display: none;
+    }
+    .textoflexizquierda2{
+        display: none;
+    }
+    .textoflexderecha2{
+        display: none;
+    }
+    .textoflexcentro2{
+        display: none;
+    }
+    .mediodiscografiacontenido{
+        width:30%; 
+        margin:auto;
+        overflow:hidden;
+        text-align: center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        background-color: transparent;
+    }
+}
+
+@media screen and (max-width: 1350px) {
+    .contenedordiscografiamobil{
+        display: inherit;
+        width: 100%;
+        padding-bottom: 35px;
+        margin:auto;
+        overflow:hidden;
+    }    
+    .contenedorflex3{
+        display: none;
+    }
+    .textoflexizquierda2{
+        display: none;
+    }
+    .textoflexderecha2{
+        display: none;
+    }
+    .textoflexcentro2{
+        display: none;
+    }
+    .mediodiscografiacontenido{
+        width:30%; 
+        margin:auto;
+        overflow:hidden;
+        text-align: center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        background-color: transparent;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .mediodiscografiacontenido{
+        width:35%; 
+        margin:auto;
+        overflow:hidden;
+        text-align: center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        background-color: transparent;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .mediodiscografiacontenido{
+        width:38%; 
+        margin:auto;
+        overflow:hidden;
+        text-align: center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        background-color: transparent;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .mediodiscografiacontenido{
+        width:40%; 
+        margin:auto;
+        overflow:hidden;
+        text-align: center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        background-color: transparent;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .mediodiscografiacontenido{
+        width:45%; 
+        margin:auto;
+        overflow:hidden;
+        text-align: center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        background-color: transparent;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .mediodiscografiacontenido{
+        width:62%; 
+        margin:auto;
+        overflow:hidden;
+        text-align: center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        background-color: transparent;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .mediodiscografiacontenido{
+        width:75%; 
+        margin:auto;
+        overflow:hidden;
+        text-align: center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        background-color: transparent;
+    }
+}
+
+.contenedortexto2
+{
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+width: 100%;
+height: 200px;
+background: rgba(44, 44, 44, 0.1);
+color: white;
+font-size: 16px;
+color: white;
+vertical-align: middle;
+text-align: center;
+}
+
+.contenido .p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.tituloamarillo  {
+    color: #EEBA41;
+    text-align: center;
+    margin-top: 64px;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.tituloamarillo2  {
+    color: #EEBA41;
+    text-align: center;
+    margin-top: 44px;
+    margin-bottom: 10px;
+}
+
+.cuadrodetitulo{
+    width: 100%;
+    border:  1px solid #111111;
+    background-color: #202020;
+    height: 40px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    line-height: 42px;
+}
+
+.video {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+.video iframe {
+     color: white;
+     position: absolute;
+     top:0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+}
+
+.parrafodescriptivo{
+    width: 100%;
+    color: white;
+    align-items: center;
+    text-align: center;
+    font-style: italic;
+    font-size: 20px;
+    margin:auto;
+    overflow:hidden;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.mediocontacto{
+	width:100%; 
+    overflow:hidden;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: black;
+    height: 700px;
+    background-image: url('../imagenes/queenfondo3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
 }
